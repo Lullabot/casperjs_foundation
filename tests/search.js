@@ -1,5 +1,5 @@
 /**
- * search.js - Search form tests.
+ * Search form tests.
  */
 
 casper.test.begin('Tests search form submission and results', 2, function suite(test) {
