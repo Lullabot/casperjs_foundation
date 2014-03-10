@@ -34,7 +34,7 @@ Asuming your local environment is set up at http://localhost, all tests may
 be run with the following command:
 
 ```bash
-./test
+./testrun
 ```
 
 You can also run a specific test by giving it as an argument to the command.
@@ -42,11 +42,11 @@ homepage.js is a sample test for http://www.msnbc.com. Here is how you could
 run it:
 
 ```bash
-./test -u http://www.msnbc.com homepage.js
+./testrun -u http://www.msnbc.com homepage.js
 ```
 
 *NOTE* `test` is a wrapper for `casperjs` which sets some useful defaults when
-running tests. Run `./test -h` for a list of all the available options.
+running tests. Run `./testrun -h` for a list of all the available options.
 
 ## Writing tests
 

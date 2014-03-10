@@ -7,9 +7,9 @@
 /**
  * Wrapper for http://docs.casperjs.org/en/latest/modules/casper.html#open
  *
- * Uses url argument from the command line in order to open a URL.
+ * Uses url argument from the command line in order to open a URL path.
  */
-casper.customOpen = function (path) {
+casper.openPath = function (path) {
   var cleanPath = path.replace(/^\//, '');
   return casper.open(casper.cli.get('url') + '/' + cleanPath);
 };
@@ -17,9 +17,10 @@ casper.customOpen = function (path) {
 /**
  * Wrapper for http://docs.casperjs.org/en/latest/modules/casper.html#thenopen
  *
- * Uses url argument from the command line in order to open a URL.
+ * Uses url argument from the command line in order to open a URL path and
+ * define a navigation step.
  */
-casper.customThenOpen = function (path, thenCallback) {
+casper.thenOpenPath = function (path, thenCallback) {
   var cleanPath = path.replace(/^\//, '');
   return casper.thenOpen(casper.cli.get('url') + '/' + cleanPath, thenCallback);
 };

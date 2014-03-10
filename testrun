@@ -3,12 +3,12 @@
 # Wrapper executable for casperjs which sets some useful defaults.
 
 usage() {
-  echo "Usage: ./test [-u http://domain.to.test] [test to run located at tests folder]
+  echo "Usage: ./testrun [-u http://domain.to.test] [test to run located at tests folder]
 
 Examples:
-./test >> Runs all tests at http://localhost.
-./test homepage.js >> Runs homepage.js tests at http://localhost.
-./test -u http://www.msnbc.com homepage.js >> Runs homepage.js test at http://www.msnbc.com."
+./testrun >> Runs all tests at http://localhost.
+./testrun homepage.js >> Runs homepage.js tests at http://localhost.
+./testrun -u http://www.msnbc.com homepage.js >> Runs homepage.js test at http://www.msnbc.com."
   exit 1
 }
 
