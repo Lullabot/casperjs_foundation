@@ -6,7 +6,7 @@ casper.test.begin('Tests homepage structure', 7, function suite(test) {
   casper.start();
 
   // Open the homepage.
-  casper.customThenOpen('/', function() {
+  casper.thenOpenPath('/', function() {
     // Verify that the main menu links are present.
     test.assertExists('a.j-signin-label', '"Sign in" link is found.');
     test.assertExists('a.j-register-label', '"Sign up" link is found.');

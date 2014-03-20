@@ -6,7 +6,7 @@ casper.test.begin('Tests search form submission and results', 2, function suite(
   casper.start();
 
   // Open the homepage.
-  casper.customThenOpen('/', function() {
+  casper.thenOpenPath('/', function() {
     casper.waitFor(function check() {
       // Fill out the search form with 'health' and submit it.
       return this.evaluate(function() {
